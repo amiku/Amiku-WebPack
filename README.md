@@ -15,8 +15,8 @@ Feature:
 Support Single Page;
 Support ES6 via Babel;
 Use SASS as CSS language;
-Build image files(copy those files size larger then 10k, and insert into pages with those files smaller then 10k);
-CSS file included in JavaScript files;
+Build image files(copy into destination directory with those files larger then 10k size, and insert into pages with those files smaller then 10k size);
+Output CSS built into JavaScript files;
 
 ```
 
@@ -45,7 +45,7 @@ $ npm run dev
 ```
 ### Build Release Files
 
-Refer to the commands below, then find built files in dist directory
+Refer to the commands below, then find built files in destination directory
 
 ```
 $ npm run release
@@ -55,8 +55,10 @@ $ npm run release
 ### Snapshot
 ![](snapshot.png)
 
+### Directory Structure
+"src" is the source directory, "dist" is the build destination directory.
 
-### directory structure
+<pre>
 │  .babelrc
 │  .eslintrc
 │  package-lock.json
@@ -74,8 +76,6 @@ $ npm run release
 │  │      
 │  └─js
 │          
-├─node_modules
-│                  
 └─src
     │  favicon.ico
     │  
@@ -95,3 +95,4 @@ $ npm run release
                 Index.scss
                 IndexComponent.scss
                 
+</pre>
