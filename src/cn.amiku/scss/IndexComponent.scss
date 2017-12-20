@@ -1,0 +1,49 @@
+/*
+ * Copyright (c) http://amiku.cn 2017-2018.
+ * Author: Amiku Zhang <i@amiku.cn>
+ */
+@import "baseConfig.scss";
+
+.content {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  animation: rainbow 5s infinite;
+  z-index: 99;
+}
+
+@keyframes rainbow {
+  0% {
+    background-color: #ffd504;
+  }
+  50% {
+    background-color: #8ce0ff;
+  }
+  100% {
+    background-color: #ffd504;
+  }
+}
+
+.header {
+  font-size: 2rem;
+  text-align: center;
+  margin: 30px auto 15px;
+  color: #666;
+}
+
+.imgWrap {
+  left: 50%;
+  transform: translateX(-50%);
+  width: 300px;
+  height: 300px;
+  text-align: center;
+  margin: 0 auto;
+  position: absolute;
+  z-index: 88;
+  background: #FBBD50 url(../img/img-css-bg.png) no-repeat center center;
+  background-size: cover;
+  @include rounded-corners;
+  img {
+    float: left
+  }
+}

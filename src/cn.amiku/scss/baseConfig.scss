@@ -1,0 +1,22 @@
+/*
+ * Copyright (c) http://amiku.cn 2017-2018.
+ * Author: Amiku Zhang <i@amiku.cn>
+ */
+// Common Definition （基本配置文件和变量定义，需要定义变量的地方，可以@import过来）
+$common-font: 'LatoRegular', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$body-background: #F5F5F5;
+$body-base-font-size: 16px;
+
+@mixin body-style {
+  color: #555;
+  background-color: $body-background;
+  font-family: $common-font;
+  font-size: $body-base-font-size;
+}
+
+// rounded-corners（圆角矩形）
+@mixin rounded-corners {
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+  border-radius: 15px;
+}

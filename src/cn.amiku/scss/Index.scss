@@ -1,0 +1,21 @@
+/*
+ * Copyright (c) http://amiku.cn 2017-2018.
+ * Author: Amiku Zhang <i@amiku.cn>
+ */
+@import "baseConfig.scss";
+
+html {
+  box-sizing: border-box;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  @include body-style;
+}
